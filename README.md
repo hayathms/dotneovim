@@ -127,6 +127,7 @@ Plugins
   that simplifies the transition between multiline and single-line code
 * [vim-repeat](https://github.com/tpope/vim-repeat) - enable repeating supported plugin maps with "."
 * [tsuquyomi](https://github.com/Quramy/tsuquyomi) - A Vim plugin for TypeScript
+* [vim-highlightedyank](https://github.com/machakann/vim-highlightedyank) - Make the yanked region apparent!
 
 
 Shortcuts and re-Mappings

@@ -10,6 +10,7 @@ Plug 'frankier/neovim-colors-solarized-truecolor-only'
 Plug 'chriskempson/base16-vim'
 Plug 'tomasr/molokai'
 
+
 " Appearance
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
@@ -29,6 +30,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/DrawIt'
+Plug 'machakann/vim-highlightedyank'
+
 
 " Version control support
 "
