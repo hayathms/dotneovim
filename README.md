@@ -51,6 +51,16 @@ Install plugins from the command line:
 
     nvim +PlugUpdate +qa
 
+Overrides
+----------------
+
+* `~/.config/nvim/before.vim`, if exists, is sourced before everything allowing
+  definitions of variables to act upon.
+* `~/.config/nvim/after.vim` if exists, is sourced after all the files in
+  `~/.config/nvim/rc.d` allowing override of default settings (e.g: color
+  schemes, plugin configuration, etc.).
+
+
 Go tags
 ----------
 
@@ -63,15 +73,14 @@ of ``ctags`` (>=5.8) and put in your ``~/.ctags``::
     --regex-Go=/var[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/v,var/
     --regex-Go=/type[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/t,type/
 
-Overrides
-----------------
 
-* `~/.config/nvim/before.vim`, if exists, is sourced before everything allowing
-  definitions of variables to act upon.
-* `~/.config/nvim/after.vim` if exists, is sourced after all the files in
-  `~/.config/nvim/rc.d` allowing override of default settings (e.g: color
-  schemes, plugin configuration, etc.).
+Rust completion and tags
+-------------------------
 
+Make sure to have ``racer`` and correctly setup the variables for
+``racer_binary`` and ``rust_source_path``. For more information, see the file
+``rc.d/20-deoplete-rust.vim`` and
+[deoplete-rust](https://github.com/sebastianmarkow/deoplete-rust) documentation.
 
 Plugins
 ------------
@@ -81,6 +90,8 @@ Plugins
 * [base16-vim](https://github.com/chriskempson/base16-vim) - color scheme
 * [vim-molokai](https://github.com/tomasr/molokai) - color scheme
 * [Deoplete](https://github.com/Shougo/deoplete.nvim) - Dark powered
+* [deoplete-rust](https://github.com/sebastianmarkow/deoplete-rust) - Rust
+  completion for Neovim (Deoplete) via Racer 
   asynchronous completion framework for Neovim 
 * [Fugitive](https://github.com/tpope/vim-fugitive) - a Git wrapper so awesome,
   it should be illegal

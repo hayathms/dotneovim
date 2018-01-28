@@ -58,6 +58,7 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'zchee/deoplete-go', { 'do': 'make' }
+Plug 'sebastianmarkow/deoplete-rust'
 
 
 " Programming languages
