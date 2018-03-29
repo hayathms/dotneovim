@@ -9,6 +9,7 @@ call plug#begin()
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
 Plug 'chriskempson/base16-vim'
 Plug 'tomasr/molokai'
+Plug 'mhartington/oceanic-next'
 
 
 " Appearance
