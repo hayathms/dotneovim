@@ -134,6 +134,8 @@ Plugins
 * [Tagbar](http://majutsushi.github.com/tagbar/) - Displays tags in a window,
   ordered by class etc.
 * [NERD tree](https://github.com/scrooloose/nerdtree) - A tree explorer
+* [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) - A
+  plugin of NERDTree showing git status
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete
   brackets, parens, quotes in pair
 * [po.vim](http://vim.sourceforge.net/scripts/script.php?script_id=695) -

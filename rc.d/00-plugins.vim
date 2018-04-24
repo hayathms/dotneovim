@@ -37,6 +37,7 @@ Plug 'machakann/vim-highlightedyank'
 " Version control support
 "
 Plug 'tpope/vim-fugitive'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ludovicchabant/vim-lawrencium'
 Plug 'airblade/vim-gitgutter'
 
