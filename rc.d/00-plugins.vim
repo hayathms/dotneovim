@@ -10,7 +10,7 @@ Plug 'frankier/neovim-colors-solarized-truecolor-only'
 Plug 'chriskempson/base16-vim'
 Plug 'tomasr/molokai'
 Plug 'mhartington/oceanic-next'
-
+Plug 'arcticicestudio/nord-vim'
 
 " Appearance
 Plug 'ryanoasis/vim-devicons'
