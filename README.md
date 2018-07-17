@@ -113,6 +113,7 @@ Plugins
   asynchronous completion framework for Neovim 
 * [Fugitive](https://github.com/tpope/vim-fugitive) - a Git wrapper so awesome,
   it should be illegal
+* [gv.vim](https://github.com/junegunn/gv.vim) - A git commit browser in Vim
 * [Lawrencium](https://github.com/ludovicchabant/vim-lawrencium) - Mercurial
   wrapper for Vim, inspired by Tim Pope's Fugitive
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) - Fuzzy file, buffer, mru,
