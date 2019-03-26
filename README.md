@@ -107,6 +107,7 @@ Plugins
 * [vim-molokai](https://github.com/tomasr/molokai) - color scheme
 * [Oceanic-next](https://github.com/mhartington/oceanic-next) - color scheme
 * [Nord VIM](https://github.com/arcticicestudio/nord-vim) - color scheme
+* [Gruvbox](https://github.com/morhetz/gruvbox) - color scheme
 * [Deoplete](https://github.com/Shougo/deoplete.nvim) - Dark powered
 * [deoplete-rust](https://github.com/sebastianmarkow/deoplete-rust) - Rust
   completion for Neovim (Deoplete) via Racer 

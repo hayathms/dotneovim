@@ -11,6 +11,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'tomasr/molokai'
 Plug 'mhartington/oceanic-next'
 Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
 
 " Appearance
 Plug 'ryanoasis/vim-devicons'
