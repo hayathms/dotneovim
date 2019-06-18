@@ -56,22 +56,11 @@ Plug 'honza/vim-snippets'
 Plug 'Valloric/MatchTagAlways'
 
 
-" Completion
-
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
-Plug 'zchee/deoplete-go', { 'do': 'make' }
-Plug 'sebastianmarkow/deoplete-rust'
-
-
 " Programming languages
 
 Plug 'klen/python-mode'
-Plug 'davidhalter/jedi-vim'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
-Plug 'Quramy/tsuquyomi'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'groenewege/vim-less'

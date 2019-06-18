@@ -74,13 +74,8 @@ of ``ctags`` (>=5.8) and put in your ``~/.ctags``::
     --regex-Go=/type[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/t,type/
 
 
-Rust completion and tags
+Rust tags
 -------------------------
-
-Make sure to have ``racer`` and correctly setup the variables for
-``racer_binary`` and ``rust_source_path``. For more information, see the file
-``rc.d/20-deoplete-rust.vim`` and
-[deoplete-rust](https://github.com/sebastianmarkow/deoplete-rust) documentation.
 
 For Rust ctags to wok (e.g: TagBar), put in your ``~/.ctags``::
 
@@ -108,10 +103,6 @@ Plugins
 * [Oceanic-next](https://github.com/mhartington/oceanic-next) - color scheme
 * [Nord VIM](https://github.com/arcticicestudio/nord-vim) - color scheme
 * [Gruvbox](https://github.com/morhetz/gruvbox) - color scheme
-* [Deoplete](https://github.com/Shougo/deoplete.nvim) - Dark powered
-* [deoplete-rust](https://github.com/sebastianmarkow/deoplete-rust) - Rust
-  completion for Neovim (Deoplete) via Racer 
-  asynchronous completion framework for Neovim 
 * [Fugitive](https://github.com/tpope/vim-fugitive) - a Git wrapper so awesome,
   it should be illegal
 * [gv.vim](https://github.com/junegunn/gv.vim) - A git commit browser in Vim
