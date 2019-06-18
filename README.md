@@ -51,6 +51,9 @@ Install plugins from the command line:
 
     nvim +PlugUpdate +qa
 
+
+After that, [install the desired COC plugins or extensions](https://github.com/neoclide/coc.nvim).
+
 Overrides
 ----------------
 
@@ -111,6 +114,8 @@ Plugins
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) - Fuzzy file, buffer, mru,
   tag, etc finder
 * [ale](https://github.com/w0rp/ale) - Asynchronous Lint Engine
+* [coc.nvim](https://github.com/neoclide/coc.nvim) - Intellisense engine for
+  vim8 & neovim, full language server protocol support as VSCode
 * [UltiSnips](https://github.com/sirver/ultisnips) - The ultimate snippet
   solution for Vim.
 * [vim-snippets](https://github.com/honza/vim-snippets) - vim-snipmate default

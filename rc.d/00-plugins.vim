@@ -54,6 +54,7 @@ Plug 'w0rp/ale'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Valloric/MatchTagAlways'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 
 
 " Programming languages

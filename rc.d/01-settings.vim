@@ -17,7 +17,7 @@ set number               " show line numbers
 set title                " show title in console title bar
 set ttyfast              " smoother changes
 set modeline             " last lines in document sets vim mode
-set shortmess=atI        " Abbreviate messages
+set shortmess=atIc       " Abbreviate messages
 set nostartofline        " don't jump to first character when paging
 set backspace=indent,eol,start
 set matchpairs+=<:>      " show matching <> (html mainly) as well
@@ -28,6 +28,8 @@ set mouse=a
 set history=1000         " larger history
 set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
+set updatetime=300       " Smaller updatetime for CursorHold & CursorHoldI
+set signcolumn=yes
 
 set splitright           " Splits to the right
 autocmd VimResized * wincmd =   " Automatically equalize splits when Vim is resized
