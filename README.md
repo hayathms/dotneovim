@@ -32,8 +32,6 @@ Prerequisites
 - Neovim and Neovim Python client.
 - For faster search, [ripgrep](https://github.com/BurntSushi/ripgrep)
 - For tags: [ctags](http://ctags.sourceforge.net)
-- For devicons, a patched font, like the one from
-  [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
 Usage
 ------------
