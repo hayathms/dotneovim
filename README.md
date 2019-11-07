@@ -181,6 +181,7 @@ Shortcuts and re-Mappings
 | ``g*``                 | :grep! -w current_word                                            |
 | ``ga``                 | :grepadd! (add results to the current search)                     |
 | ``gr``                 | :CtrlPBufTag (fuzzy tag search in current file)                   |
+| ``<TAB>``              | trigger completion, completion confirm, snippet expand and jump   |
 
 
 Virtualenv settings
