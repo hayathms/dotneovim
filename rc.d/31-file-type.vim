@@ -27,6 +27,9 @@ autocmd Filetype python setlocal omnifunc=jedi#completions tw=79
                                 \ completeopt-=preview
                                 \ formatoptions+=c
 
+" RustFmt uses 100 for line width
+autocmd bufreadpre *.rs setlocal colorcolumn=100
+
 " snipMate
 " autocmd FileType python set ft=python.django " For SnipMate
 autocmd FileType html set ft=htmldjango.html " For SnipMate

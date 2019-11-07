@@ -45,7 +45,7 @@ set synmaxcol=200        " Syntax highlight only the first 200 chars"
 filetype plugin on
 filetype indent plugin on
 
-set colorcolumn=80
+setlocal colorcolumn=80
 
 if has('linebreak')      " Break indent wrapped lines
   set breakindent
