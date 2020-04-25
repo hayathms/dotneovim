@@ -70,6 +70,8 @@ Plug 'groenewege/vim-less'
 Plug 'ap/vim-css-color'
 Plug 'vim-scripts/po.vim--Jelenak'
 Plug 'pangloss/vim-javascript'
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 
 call plug#end()
