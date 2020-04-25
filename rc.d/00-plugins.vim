@@ -33,6 +33,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/DrawIt'
 Plug 'machakann/vim-highlightedyank'
+Plug 'Yggdroot/indentLine'
 
 
 " Version control support
