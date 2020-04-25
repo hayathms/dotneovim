@@ -12,6 +12,8 @@ Plug 'tomasr/molokai'
 Plug 'mhartington/oceanic-next'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 " Appearance
 Plug 'vim-airline/vim-airline'
