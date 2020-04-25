@@ -26,6 +26,104 @@ Features
 * Tab completion
 * Commenting
 
+
+Plugins
+------------
+
+### Color schemes & Appearance
+
+* [Solarized](https://github.com/altercation/vim-colors-solarized)
+* [base16-vim](https://github.com/chriskempson/base16-vim)
+* [vim-molokai](https://github.com/tomasr/molokai)
+* [Oceanic-next](https://github.com/mhartington/oceanic-next)
+* [Nord VIM](https://github.com/arcticicestudio/nord-vim)
+* [Gruvbox](https://github.com/morhetz/gruvbox)
+* [Dracula](dracula/vim)
+* [One Half](https://github.com/sonph/onehalf)
+* [vim-airline](https://github.com/vim-airline/vim-airline) - Light weight status
+  line utility with [themes](https://github.com/vim-airline/vim-airline-themes)
+
+### Utilities
+
+* [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) - Fuzzy file, buffer, mru,
+  tag, etc finder
+* [vim-surround](https://github.com/tpope/vim-surround) -
+  quoting/parenthesizing made simple
+* [vim-repeat](https://github.com/tpope/vim-repeat) - enable repeating
+  supported plugin maps with "."
+* [NERD tree](https://github.com/scrooloose/nerdtree) - A tree explorer
+* [auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete
+  brackets, parens, quotes in pair
+* [tabular](https://github.com/godlygeek/tabular) - text filtering and
+  alignment
+* [vim-unimpaired](https://github.com/tpope/vim-unimpaired) - pairs of handy
+  bracket mappings
+* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) -
+  True Sublime Text style multiple selections for Vim
+* [splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim) - A Vim plugin
+  that simplifies the transition between multiline and single-line code
+* [DrawIt](https://github.com/vim-scripts/DrawIt) - ASCII drawing plugin:
+  lines, ellipses, arrows, fills, and more!
+* [vim-highlightedyank](https://github.com/machakann/vim-highlightedyank) -
+  Make the yanked region apparent!
+* [indentLine](https://github.com/Yggdroot/indentLine) - A vim plugin to
+  display the indention levels with thin vertical lines
+
+### Version Control
+
+* [Fugitive](https://github.com/tpope/vim-fugitive) - a Git wrapper so awesome,
+  it should be illegal
+* [gv.vim](https://github.com/junegunn/gv.vim) - A git commit browser in Vim
+* [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) - A
+  plugin of NERDTree showing git status
+* [Lawrencium](https://github.com/ludovicchabant/vim-lawrencium) - Mercurial
+  wrapper for Vim, inspired by Tim Pope's Fugitive
+
+### Programming support
+
+* [coc.nvim](https://github.com/neoclide/coc.nvim) - Intellisense engine for
+  vim8 & neovim, full language server protocol support as VSCode
+* [vim-polyglot](https://github.com/sheerun/vim-polyglot) - A collection of
+  language packs for Vim
+* [ale](https://github.com/w0rp/ale) - Asynchronous Lint Engine
+* [tcomment_vim](https://github.com/tomtom/tcomment_vim) - An extensible &
+  universal comment vim-plugin that also handles embedded filetypes
+* [Tagbar](http://majutsushi.github.com/tagbar/) - Displays tags in a window,
+  ordered by class etc.
+* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) - 
+  [EditorConfig](https://editorconfig.org/) plugin for Vim 
+* [Shebang](https://github.com/vim-scripts/Shebang) - Make executable by
+  setting the correct shebang and executable bit
+* [UltiSnips](https://github.com/sirver/ultisnips) - The ultimate snippet
+  solution for Vim.
+* [vim-snippets](https://github.com/honza/vim-snippets) - vim-snipmate default
+  snippets
+* [MatchTagAlways](https://github.com/valloric/MatchTagAlways) - A Vim plugin
+  that always highlights the enclosing html/xml tags
+
+### Programming Languages and Markups
+
+* [python-mode](https://github.com/klen/python-mode) - Vim python-mode. PyLint,
+  Rope, Pydoc, breakpoints from box
+* [vim-go](https://github.com/fatih/vim-go) - Go development plugin for Vim
+* [rust.vim](https://github.com/rust-lang/rust.vim) - provides Rust file
+  detection, syntax highlighting, formatting, Syntastic integration, and more.
+* [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) - CSS3 syntax
+  (and syntax defined in some foreign specifications) support for Vim
+* [scss-syntax.vim](https://github.com/cakebaker/scss-syntax.vim) - Vim syntax
+  file for scss (Sassy CSS)
+* [vim-less](https://github.com/groenewege/vim-less) - vim syntax for LESS
+  (dynamic CSS)
+* [vim-css-color](https://github.com/ap/vim-css-color) - Preview colours in
+  source code while editing
+* [vim-javascript](https://github.com/pangloss/vim-javascript) - Vastly
+  improved Javascript indentation and syntax support in Vim
+* [vim-markdown](https://github.com/plasticboy/vim-markdown/) - Markdown Vim
+  Mode (with [preview](https://github.com/iamcco/markdown-preview.nvim)).
+* [po.vim](https://github.com/vim-scripts/po.vim--Jelenak) -
+  Easier editing of GNU gettext PO files
+
+
 Prerequisites
 -------------
 
@@ -73,70 +171,6 @@ of ``ctags`` (>=5.8) and put in your ``~/.ctags``::
     --regex-Go=/func([ \t]+\([^)]+\))?[ \t]+([a-zA-Z0-9_]+)/\2/f,func/
     --regex-Go=/var[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/v,var/
     --regex-Go=/type[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/t,type/
-
-
-
-Plugins
-------------
-
-* [Solarized](https://github.com/altercation/vim-colors-solarized) - color
-  scheme
-* [base16-vim](https://github.com/chriskempson/base16-vim) - color scheme
-* [vim-molokai](https://github.com/tomasr/molokai) - color scheme
-* [Oceanic-next](https://github.com/mhartington/oceanic-next) - color scheme
-* [Nord VIM](https://github.com/arcticicestudio/nord-vim) - color scheme
-* [Gruvbox](https://github.com/morhetz/gruvbox) - color scheme
-* [Fugitive](https://github.com/tpope/vim-fugitive) - a Git wrapper so awesome,
-  it should be illegal
-* [gv.vim](https://github.com/junegunn/gv.vim) - A git commit browser in Vim
-* [Lawrencium](https://github.com/ludovicchabant/vim-lawrencium) - Mercurial
-  wrapper for Vim, inspired by Tim Pope's Fugitive
-* [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) - Fuzzy file, buffer, mru,
-  tag, etc finder
-* [ale](https://github.com/w0rp/ale) - Asynchronous Lint Engine
-* [coc.nvim](https://github.com/neoclide/coc.nvim) - Intellisense engine for
-  vim8 & neovim, full language server protocol support as VSCode
-* [UltiSnips](https://github.com/sirver/ultisnips) - The ultimate snippet
-  solution for Vim.
-* [vim-snippets](https://github.com/honza/vim-snippets) - vim-snipmate default
-  snippets
-* [python-mode](https://github.com/klen/python-mode) - Vim python-mode. PyLint,
-  Rope, Pydoc, breakpoints from box
-* [vim-go](https://github.com/fatih/vim-go) - Go development plugin for Vim
-* [rust.vim](https://github.com/rust-lang/rust.vim) - provides Rust file
-  detection, syntax highlighting, formatting, Syntastic integration, and more.
-* [DrawIt](https://github.com/vim-scripts/DrawIt) - ASCII drawing plugin:
-  lines, ellipses, arrows, fills, and more!
-* [vim-surround](https://github.com/tpope/vim-surround) -
-  quoting/parenthesizing made simple
-* [Shebang](https://github.com/vim-scripts/Shebang) - Make executable by
-  setting the correct shebang and executable bit
-* [Tagbar](http://majutsushi.github.com/tagbar/) - Displays tags in a window,
-  ordered by class etc.
-* [NERD tree](https://github.com/scrooloose/nerdtree) - A tree explorer
-* [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) - A
-  plugin of NERDTree showing git status
-* [auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete
-  brackets, parens, quotes in pair
-* [po.vim](http://vim.sourceforge.net/scripts/script.php?script_id=695) -
-  Easier editing of GNU gettext PO files
-* [MatchTagAlways](https://github.com/valloric/MatchTagAlways) - A Vim plugin
-  that always highlights the enclosing html/xml tags
-* [vim-airline](https://github.com/bling/vim-airline) - Light weight status
-  line utility
-* [tabular](https://github.com/godlygeek/tabular) - text filtering and
-  alignment
-* [tcomment_vim](https://github.com/tomtom/tcomment_vim) - An extensible &
-  universal comment vim-plugin that also handles embedded filetypes
-* [vim-unimpaired](https://github.com/tpope/vim-unimpaired) - pairs of handy
-  bracket mappings
-* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) -
-  True Sublime Text style multiple selections for Vim
-* [splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim) - A Vim plugin
-  that simplifies the transition between multiline and single-line code
-* [vim-repeat](https://github.com/tpope/vim-repeat) - enable repeating supported plugin maps with "."
-* [tsuquyomi](https://github.com/Quramy/tsuquyomi) - A Vim plugin for TypeScript
-* [vim-highlightedyank](https://github.com/machakann/vim-highlightedyank) - Make the yanked region apparent!
 
 
 Shortcuts and re-Mappings
