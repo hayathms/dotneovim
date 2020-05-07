@@ -57,6 +57,7 @@ Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Valloric/MatchTagAlways'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'wellle/context.vim'
 
 
 " Programming languages
