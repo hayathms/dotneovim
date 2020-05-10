@@ -1,5 +1,5 @@
 " ==================================================
-" COC configuration and mapping
+" COC configuration and mapping:wq
 " ==================================================
 
 " Use `lp` and `ln` for navigate diagnostics

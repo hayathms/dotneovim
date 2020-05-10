@@ -100,9 +100,6 @@ Plugins
   snippets
 * [MatchTagAlways](https://github.com/valloric/MatchTagAlways) - A Vim plugin
   that always highlights the enclosing html/xml tags
-* [context.vim](https://github.com/wellle/context.vim) - Vim plugin that shows
-  the context of the currently visible buffer contents
-
 
 ### Programming Languages and Markups
 
