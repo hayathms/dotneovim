@@ -14,6 +14,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'chuling/equinusocio-material.vim'
 
 " Appearance
 Plug 'vim-airline/vim-airline'

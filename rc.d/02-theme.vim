@@ -16,3 +16,5 @@ let g:oceanic_next_terminal_italic = 1
 
 set termguicolors
 hi Normal guibg=NONE ctermbg=NONE
+
+let g:equinusocio_material_style = 'pure'
