@@ -35,7 +35,10 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/DrawIt'
 Plug 'machakann/vim-highlightedyank'
 Plug 'Yggdroot/indentLine'
-
+Plug 'lukas-reineke/indent-blankline.nvim'
+if has('nvim')
+  Plug 'kizza/actionmenu.nvim'
+endif
 
 " Version control support
 "
@@ -57,7 +60,7 @@ Plug 'w0rp/ale'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Valloric/MatchTagAlways'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 " Programming languages
