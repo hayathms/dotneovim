@@ -15,6 +15,7 @@ Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'chuling/equinusocio-material.vim'
+Plug 'ayu-theme/ayu-vim'
 
 " Appearance
 Plug 'vim-airline/vim-airline'

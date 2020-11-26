@@ -40,6 +40,7 @@ Plugins
 * [Gruvbox](https://github.com/morhetz/gruvbox)
 * [Dracula](dracula/vim)
 * [One Half](https://github.com/sonph/onehalf)
+* [ayu](https://github.com/ayu-theme/ayu-vim)
 * [vim-airline](https://github.com/vim-airline/vim-airline) - Light weight status
   line utility with [themes](https://github.com/vim-airline/vim-airline-themes)
 
