@@ -1,6 +1,7 @@
 let g:rust_use_custom_ctags_defs = 1  " if using rust.vim
+let g:rustfmt_autosave = 1
 let g:tagbar_type_rust = {
-  \ 'ctagsbin' : '/path/to/your/universal/ctags',
+  \ 'ctagsbin' : '/usr/bin/ctags',
   \ 'ctagstype' : 'rust',
   \ 'kinds' : [
       \ 'n:modules',
