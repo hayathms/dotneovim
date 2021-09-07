@@ -1,17 +1,131 @@
-" The files in the `plugin` directory will be auto loaded by vim
-
 " ==================================================
-" vim-plug  setup
+" Plugins list for vim plug
+"
+" Files under `plugin` directory will be autoloaded
+" as it should part of the runtime path (:h rtp)
 " ==================================================
 
 call plug#begin()
 
 " Color schemes and appearance
-
 Plug 'gruvbox-community/gruvbox'
 
 " Version control support
-
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
+
+
+" ==================================================
+" Settings
+" ==================================================
+
+let mapleader="\<Space>" " Change the leader to be a space vs slash
+set scrolloff=3          " Keep 3 lines when scrolling
+set cmdheight=2          " Make command line two lines high
+set autoindent           " Always set autoindenting on
+set visualbell           " Use visual bell instead of beeping
+set nobackup             " Do not keep a backup filset noswapfile
+set noswapfile           " Do not create a swap file
+set hidden               " Enable hiding the buffer without saving
+set guicursor=           " Disable cursor styling
+set number               " Show line numbers
+set relativenumber       " Show the line number relative to current line
+set signcolumn=yes       " Draw the sign column
+set colorcolumn=80
+set nowrap               " Do not wrap long lines
+set completeopt=menu,noinsert,noselect
+set updatetime=50        " Smaller updatetime for CursorHold & CursorHoldI
+set noshowmode           " Hide the default mode text
+set shortmess+=c         " Abbreviate messages
+
+" Tab to spaces settings
+set tabstop=4            " Number of spaces of tab character
+set shiftwidth=4         " Number of spaces to (auto)indent
+set expandtab		 " Tab to spaces by default
+set softtabstop=4
+
+" Search settings
+set hlsearch             " Highlight searches
+set incsearch            " Do incremental searching
+set ignorecase           " Ignore case when searching
+set infercase            " Smarter completions that will be case aware when ignorecase is on
+set smartcase            " If contains upper case, make case sensitive search
+
+" No modlines for security
+set modelines=0
+set nomodeline
+
+" Highlight end of line whitespace.
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
+
+
+" ==================================================
+" Key Mappings
+" ==================================================
+
+" Maps for jj to act as Esc in insert and command modes
+ino jj <esc>
+cno jj <c-c>
+
+" One can map ctrl-c to something else if needed
+map <c-c> <Nop>
+imap <c-c> <Nop>
+
+" Smarter j/k navigation
+" Convert the j and k movement commands from strict linewise movements to
+" onscreen display line movements via the gj and gk commands. When
+" preceded with a count we want to go back to strict linewise movements.
+" will automatically save movements larger than 5 lines to the jumplist.
+nnoremap <expr> j v:count ? (v:count > 5 ? "m'" . v:count : '') . 'j' : 'gj'
+nnoremap <expr> k v:count ? (v:count > 5 ? "m'" . v:count : '') . 'k' : 'gk'
+
+" Center next/previous matched string
+nnoremap n nzz
+nnoremap N Nzz
+
+" <leader>v loads init.vim for edit
+map <leader>v :sp ~/.config/nvim/init.vim<CR><C-W>_
+" <leader>V Activate changes to init.vim (needs save)
+map <silent> <leader>V :source ~/.config/nvim/init.vim<CR>
+
+"
+" Window navigation
+"
+
+" control + vim direction key to navigate windows
+noremap <C-J> <C-W>j
+noremap <C-K> <C-W>k
+noremap <C-H> <C-W>h
+noremap <C-L> <C-W>l
+
+" control + arrow key to navigate windows
+noremap <C-Down> <C-W>j
+noremap <C-Up> <C-W>k
+noremap <C-Left> <C-W>h
+noremap <C-Right> <C-W>l
+
+"
+" Splits handling
+"
+
+" Make these all work in insert mode
+imap <C-W> <C-O><C-W>
+
+" - and + to resize horizontal splits
+map - <C-W>-
+map + <C-W>+
+
+" alt-< or alt-> for vertical splits
+map <m-,> <C-W>>
+map <m-.> <C-W><
+
+" Deleter buffer, keep the split (switch to prev buf, delete now prev buf)
+nmap <leader>d :b#<bar>bd#<CR>
+
+
+" ==================================================
+" Clean all end of line whitespace with <Leader>S
+" ==================================================
+:nnoremap <silent><leader>S :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
