@@ -7,6 +7,11 @@
 
 call plug#begin()
 
+" Utilities
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 " Color schemes and appearance
 Plug 'gruvbox-community/gruvbox'
 
