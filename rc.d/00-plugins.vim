@@ -11,11 +11,13 @@ Plug 'chriskempson/base16-vim'
 Plug 'tomasr/molokai'
 Plug 'mhartington/oceanic-next'
 Plug 'arcticicestudio/nord-vim'
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'chuling/equinusocio-material.vim'
 Plug 'ayu-theme/ayu-vim'
+Plug 'kwsp/halcyon-neovim'
+Plug 'haishanh/night-owl.vim'
 
 " Appearance
 Plug 'vim-airline/vim-airline'
@@ -35,7 +37,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/DrawIt'
 Plug 'machakann/vim-highlightedyank'
-Plug 'Yggdroot/indentLine'
 Plug 'lukas-reineke/indent-blankline.nvim'
 if has('nvim')
   Plug 'kizza/actionmenu.nvim'
