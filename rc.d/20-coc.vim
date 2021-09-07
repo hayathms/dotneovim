@@ -12,6 +12,10 @@ nmap <silent> <leader>lt <Plug>(coc-type-definition)
 nmap <silent> <leader>li <Plug>(coc-implementation)
 nmap <silent> <leader>lf <Plug>(coc-references)
 
+" Show Coc Actions
+nmap <silent> <leader>la :call CocAction("codeAction")<CR>
+
+
 " Remap for rename current word
 nmap <leader>lr <Plug>(coc-rename)
 
@@ -42,25 +46,3 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
-
-" Show Coc code actions
-let s:code_actions = []
-
-func! ActionMenuCodeActions() abort
-  if coc#util#has_float()
-    call coc#util#float_hide()
-  endif
-
-  let s:code_actions = CocAction('codeActions')
-  let l:menu_items = map(copy(s:code_actions), { index, item -> item['title'] })
-  call actionmenu#open(l:menu_items, 'ActionMenuCodeActionsCallback')
-endfunc
-
-func! ActionMenuCodeActionsCallback(index, item) abort
-  if a:index >= 0
-    let l:selected_code_action = s:code_actions[a:index]
-    let l:response = CocAction('doCodeAction', l:selected_code_action)
-  endif
-endfunc
-
-nnoremap <silent> <Leader>s :call ActionMenuCodeActions()<CR>
