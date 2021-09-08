@@ -11,6 +11,13 @@ call plug#begin()
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'editorconfig/editorconfig-vim'
+Plug 'windwp/nvim-autopairs'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
+Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Color schemes and appearance
 Plug 'gruvbox-community/gruvbox'
@@ -18,10 +25,6 @@ Plug 'gruvbox-community/gruvbox'
 " Version control support
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
-
-" Programming support and utilities
-Plug 'editorconfig/editorconfig-vim'
-Plug 'windwp/nvim-autopairs'
 
 " Snippets
 Plug 'sirver/ultisnips'
