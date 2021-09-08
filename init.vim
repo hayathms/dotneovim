@@ -11,7 +11,6 @@ call plug#begin()
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'editorconfig/editorconfig-vim'
 Plug 'windwp/nvim-autopairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -25,6 +24,7 @@ Plug 'gruvbox-community/gruvbox'
 " Version control support
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'junegunn/gv.vim'
 
 " Snippets
 Plug 'sirver/ultisnips'
@@ -41,6 +41,11 @@ Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'f3fora/cmp-spell'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'onsails/lspkind-nvim'
+
+" Programming
+Plug 'editorconfig/editorconfig-vim'
+Plug 'b3nj5m1n/kommentary'
+Plug 'simrat39/symbols-outline.nvim'
 
 call plug#end()
 
