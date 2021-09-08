@@ -22,6 +22,10 @@ Plug 'lewis6991/gitsigns.nvim'
 " Programming support and utilities
 Plug 'editorconfig/editorconfig-vim'
 Plug 'windwp/nvim-autopairs'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/cmp-buffer'
 
 call plug#end()
 
