@@ -22,10 +22,21 @@ Plug 'lewis6991/gitsigns.nvim'
 " Programming support and utilities
 Plug 'editorconfig/editorconfig-vim'
 Plug 'windwp/nvim-autopairs'
+
+" Snippets
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
+
+" LSP and completion
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-emoji'
+Plug 'hrsh7th/cmp-path'
+Plug 'f3fora/cmp-spell'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'onsails/lspkind-nvim'
 
 call plug#end()
 
