@@ -19,6 +19,9 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
 
+" Programming support
+Plug 'editorconfig/editorconfig-vim'
+"
 call plug#end()
 
 
@@ -44,6 +47,9 @@ set completeopt=menu,noinsert,noselect
 set updatetime=50        " Smaller updatetime for CursorHold & CursorHoldI
 set noshowmode           " Hide the default mode text
 set shortmess+=c         " Abbreviate messages
+set matchpairs+=<:>      " Show matching <> (html mainly) as well
+set showmatch            " Show matching braces, somewhat annoying...
+set matchtime=3          " Tenths of a second to show the matching paren
 
 " Tab to spaces settings
 set tabstop=4            " Number of spaces of tab character
