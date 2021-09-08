@@ -19,9 +19,10 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
 
-" Programming support
+" Programming support and utilities
 Plug 'editorconfig/editorconfig-vim'
-"
+Plug 'windwp/nvim-autopairs'
+
 call plug#end()
 
 
