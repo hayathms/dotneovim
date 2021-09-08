@@ -3,6 +3,7 @@ local Rule = require('nvim-autopairs.rule')
 
 npairs.setup({
     check_ts = true,
+    disable_filetype = { "TelescopePrompt" , "vim" },
     ts_config = {
         lua = {'string'},-- it will not add pair on that treesitter node
         javascript = {'template_string'},
@@ -10,9 +11,18 @@ npairs.setup({
     }
 })
 
+-- treesitter setup
 require('nvim-treesitter.configs').setup {
     autopairs = {enable = true}
 }
+
+-- cmp setup
+require("nvim-autopairs.completion.cmp").setup({
+  map_cr = true, --  map <CR> on insert mode
+  map_complete = true, -- it will auto insert `(` after select function or method item
+  auto_select = true -- automatically select the first item
+})
+
 
 local ts_conds = require('nvim-autopairs.ts-conds')
 
