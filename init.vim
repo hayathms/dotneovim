@@ -17,6 +17,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'Yggdroot/indentLine'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'kyazdani42/nvim-tree.lua'
 
 " Color schemes and appearance
 Plug 'gruvbox-community/gruvbox'
