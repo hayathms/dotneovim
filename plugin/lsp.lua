@@ -1,4 +1,5 @@
 local nvim_lsp = require('lspconfig')
+local lsp_status = require('lsp-status')
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -31,8 +32,18 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 
+  lsp_status.on_attach(client)
 end
 
 
-nvim_lsp.rust_analyzer.setup { on_attach = on_attach }
+nvim_lsp.rust_analyzer.setup {
+    on_attach = on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            checkOnSave = {
+                command = "clippy"
+            }
+        }
+    }
+}
 nvim_lsp.pyright.setup { on_attach = on_attach }
