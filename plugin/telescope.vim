@@ -9,7 +9,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 lua <<EOF
     require('telescope').setup{
         defaults = {
-            path_display = {'shorten'}
+            layout_strategy = "vertical"
         }
     }
 EOF
