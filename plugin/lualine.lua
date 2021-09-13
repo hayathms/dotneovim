@@ -3,7 +3,13 @@ require('lualine').setup {
         section_separators = "",
     },
     sections = {
-        lualine_c = {'filename',  require'lsp-status'.status},
+        lualine_c = {
+            {
+                'filename',
+                path = 1
+            },
+            require'lsp-status'.status
+        },
         lualine_x = {
             {
                 'diagnostics',
