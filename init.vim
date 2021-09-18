@@ -45,6 +45,7 @@ Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'f3fora/cmp-spell'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'onsails/lspkind-nvim'
+Plug 'kabouzeid/nvim-lspinstall'
 
 " Programming
 Plug 'editorconfig/editorconfig-vim'
