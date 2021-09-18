@@ -18,6 +18,9 @@ Plug 'tpope/vim-unimpaired'
 Plug 'Yggdroot/indentLine'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'godlygeek/tabular'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'vim-scripts/DrawIt'
 
 " Color schemes and appearance
 Plug 'gruvbox-community/gruvbox'
