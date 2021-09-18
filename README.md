@@ -1,29 +1,29 @@
 My Neovim setup
 ===============
 
-My Neovim IDE setup for Python, Go, Rust, HTML, CSS, Javascript, Typescript,
-gettext and more.
+My Neovim IDE setup.
+
+![NeoVIM screenshot](https://i.imgur.com/Hjthsde.png)
+
+
+Note: For the old COC related setup, please checkout the `with-coc` tag.
 
 Features
 ---------
 
 * `init.vim` handling
 * Incremental and smart case search.
-* Sublime Text style multiple selections
 * Trailing whitespace highlighting and cleaning shortcut
-* Logical and Visual layout (for Right-To-Left lanaguegs) editing.
-* Tabs expand to 4 spaces by default
+* Logical and Visual layout (for Right-To-Left lanaguegs) editing
+* Tabs expand to 4 spaces by default, 2 spaces for specific file types
 * Remap `<Leader>` to `<SPACE>` and `jj` to `<ESC>`
 * Highlight current row and color column 80
-* 70+ language packs support
-* Syntax checking
-* Snippets
+* Syntax checking and completion via language servers
 * Quotes, parens etc pair, surround
-* Extended pair matching with %
 * ASCII drawing
-* Fuzzy file, buffer, mru, tag, etc finder
-* VCS plugins (Fugitive, Lawrencium)
-* Tab completion
+* Various fuzzy finders with Telescope
+* Git plugins (Fugitive, gitsigns)
+* Completion and snippets via LSP
 * Commenting
 
 
@@ -32,41 +32,36 @@ Plugins
 
 ### Color schemes & Appearance
 
-* [Solarized](https://github.com/altercation/vim-colors-solarized)
-* [base16-vim](https://github.com/chriskempson/base16-vim)
-* [vim-molokai](https://github.com/tomasr/molokai)
-* [Oceanic-next](https://github.com/mhartington/oceanic-next)
-* [Nord VIM](https://github.com/arcticicestudio/nord-vim)
 * [Gruvbox](https://github.com/morhetz/gruvbox)
-* [Dracula](dracula/vim)
-* [One Half](https://github.com/sonph/onehalf)
-* [ayu](https://github.com/ayu-theme/ayu-vim)
-* [vim-airline](https://github.com/vim-airline/vim-airline) - Light weight status
-  line utility with [themes](https://github.com/vim-airline/vim-airline-themes)
+* [lualine](https://github.com/hoob3rt/lualine.nvim) - Fast status line
+* [nvim-web-devicon](https://github.com/kyazdani42/nvim-web-devicons) - Icons
+  for plugins
+* [lspkind-nvim](https://github.com/onsails/lspkind-nvim) - This tiny plugin
+  adds vscode-like pictograms to neovim built-in lsp:
 
 ### Utilities
 
-* [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) - Fuzzy file, buffer, mru,
-  tag, etc finder
-* [vim-surround](https://github.com/tpope/vim-surround) -
-  quoting/parenthesizing made simple
+* [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - highly
+  extendable fuzzy finder
+* [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) -
+  provide a simple and easy way to use the interface for tree-sitter in Neovim
+  and to provide some basic functionality such as highlighting
+* [vim-surround](https://github.com/tpope/vim-surround) - quoting &
+  parenthesizing made simple
 * [vim-repeat](https://github.com/tpope/vim-repeat) - enable repeating
   supported plugin maps with "."
-* [NERD tree](https://github.com/scrooloose/nerdtree) - A tree explorer
+* [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) - A File
+  Explorer For Neovim Written In Lua
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete
   brackets, parens, quotes in pair
 * [tabular](https://github.com/godlygeek/tabular) - text filtering and
   alignment
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired) - pairs of handy
   bracket mappings
-* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) -
-  True Sublime Text style multiple selections for Vim
 * [splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim) - A Vim plugin
   that simplifies the transition between multiline and single-line code
 * [DrawIt](https://github.com/vim-scripts/DrawIt) - ASCII drawing plugin:
   lines, ellipses, arrows, fills, and more!
-* [vim-highlightedyank](https://github.com/machakann/vim-highlightedyank) -
-  Make the yanked region apparent!
 * [indentLine](https://github.com/Yggdroot/indentLine) - A vim plugin to
   display the indention levels with thin vertical lines
 
@@ -75,54 +70,34 @@ Plugins
 * [Fugitive](https://github.com/tpope/vim-fugitive) - a Git wrapper so awesome,
   it should be illegal
 * [gv.vim](https://github.com/junegunn/gv.vim) - A git commit browser in Vim
-* [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) - A
-  plugin of NERDTree showing git status
-* [Lawrencium](https://github.com/ludovicchabant/vim-lawrencium) - Mercurial
-  wrapper for Vim, inspired by Tim Pope's Fugitive
+* [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Super fast git
+  decorations implemented purely in lua/teal.
 
 ### Programming support
 
-* [coc.nvim](https://github.com/neoclide/coc.nvim) - Intellisense engine for
-  vim8 & neovim, full language server protocol support as VSCode
-* [vim-polyglot](https://github.com/sheerun/vim-polyglot) - A collection of
-  language packs for Vim
-* [ale](https://github.com/w0rp/ale) - Asynchronous Lint Engine
-* [tcomment_vim](https://github.com/tomtom/tcomment_vim) - An extensible &
-  universal comment vim-plugin that also handles embedded filetypes
-* [Tagbar](http://majutsushi.github.com/tagbar/) - Displays tags in a window,
-  ordered by class etc.
-* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) - 
-  [EditorConfig](https://editorconfig.org/) plugin for Vim 
-* [Shebang](https://github.com/vim-scripts/Shebang) - Make executable by
-  setting the correct shebang and executable bit
+* [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of
+  common configurations for Neovim's built-in language server client.
+* [nvim-lspinstall](https://github.com/kabouzeid/nvim-lspinstall) - Adds the
+  missing `:LspInstall` <language> command to conveniently install language
+  servers
+* [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp/) - A completion
+  engine plugin for neovim written in Lua, including various sources for
+  completion (LSP, UltiSnips, path, emoji, buffer).
+* [kommentary](https://github.com/b3nj5m1n/kommentary) - Neovim plugin to
+  comment text in and out, written in lua
+* [symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim) -
+  A tree like view for symbols in Neovim using the LSP
+* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) -
+  [EditorConfig](https://editorconfig.org/) plugin for Vim
 * [UltiSnips](https://github.com/sirver/ultisnips) - The ultimate snippet
   solution for Vim.
-* [vim-snippets](https://github.com/honza/vim-snippets) - vim-snipmate default
-  snippets
-* [MatchTagAlways](https://github.com/valloric/MatchTagAlways) - A Vim plugin
-  that always highlights the enclosing html/xml tags
+* [vim-snippets](https://github.com/honza/vim-snippets) - Snippets collection
 
-### Programming Languages and Markups
+### Additional Programming Languages and Markups
 
-* [python-mode](https://github.com/klen/python-mode) - Vim python-mode. PyLint,
-  Rope, Pydoc, breakpoints from box
 * [vim-go](https://github.com/fatih/vim-go) - Go development plugin for Vim
 * [rust.vim](https://github.com/rust-lang/rust.vim) - provides Rust file
   detection, syntax highlighting, formatting, Syntastic integration, and more.
-* [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) - CSS3 syntax
-  (and syntax defined in some foreign specifications) support for Vim
-* [scss-syntax.vim](https://github.com/cakebaker/scss-syntax.vim) - Vim syntax
-  file for scss (Sassy CSS)
-* [vim-less](https://github.com/groenewege/vim-less) - vim syntax for LESS
-  (dynamic CSS)
-* [vim-css-color](https://github.com/ap/vim-css-color) - Preview colours in
-  source code while editing
-* [vim-javascript](https://github.com/pangloss/vim-javascript) - Vastly
-  improved Javascript indentation and syntax support in Vim
-* [vim-markdown](https://github.com/plasticboy/vim-markdown/) - Markdown Vim
-  Mode (with [preview](https://github.com/iamcco/markdown-preview.nvim)).
-* [po.vim](https://github.com/vim-scripts/po.vim--Jelenak) -
-  Easier editing of GNU gettext PO files
 
 
 Prerequisites
@@ -130,7 +105,8 @@ Prerequisites
 
 - Neovim and Neovim Python client.
 - For faster search, [ripgrep](https://github.com/BurntSushi/ripgrep)
-- For tags: [ctags](http://ctags.sourceforge.net)
+- NodeJS (for some language servers)
+
 
 Usage
 ------------
@@ -149,29 +125,19 @@ Install plugins from the command line:
     nvim +PlugUpdate +qa
 
 
-After that, [install the desired COC plugins or extensions](https://github.com/neoclide/coc.nvim).
+After that start Neovim and install the desired language servers, e.g:
+
+    :LspInstall python
+    :LspInstall Rust
+
+
+For more info see [nvim-lspinstall bundled installers](https://github.com/kabouzeid/nvim-lspinstall#bundled-installers)
 
 Overrides
 ----------------
 
-* `~/.config/nvim/before.vim`, if exists, is sourced before everything allowing
-  definitions of variables to act upon.
-* `~/.config/nvim/after.vim` if exists, is sourced after all the files in
-  `~/.config/nvim/rc.d` allowing override of default settings (e.g: color
-  schemes, plugin configuration, etc.).
-
-
-Go tags
-----------
-
-For CtrlPBufTag search in go files, make sure you have an updated version
-of ``ctags`` (>=5.8) and put in your ``~/.ctags``::
-
-    --langdef=Go
-    --langmap=Go:.go
-    --regex-Go=/func([ \t]+\([^)]+\))?[ \t]+([a-zA-Z0-9_]+)/\2/f,func/
-    --regex-Go=/var[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/v,var/
-    --regex-Go=/type[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/t,type/
+Create the directory* `~/.config/nvim/after`, placing there additional
+configurations.
 
 
 Shortcuts and re-Mappings
@@ -183,31 +149,29 @@ Shortcuts and re-Mappings
 | ``<SPACE>``            | ``<Leader>``                                                      |
 | ``<Leader>v``          | Load `.vimrc`                                                     |
 | ``<Leader>V``          | Activate changes to `.vimrc` (Make sure to save it before)        |
-| ``<F2>``               | Close current split (window)                                      |
-| ``<F3>``               | Toggle NERD tree                                                  |
-| ``<F5>``               | Toggle Tagbar                                                     |
+| ``<Leader>tt``         | Toggle tree                                                       |
+| ``<Leader>tf``         | Find current file in the tree                                     |
+| ``<Leader>ts``         | Toggle symbols side bar                                           |
 | ``<Leader>S``          | Remove trailing whitespace                                        |
 | ``<CTRL>hjkl``         | Window movement commands                                          |
 | ``<CTRL>arrow``        | Window movement commands                                          |
 | ``<Leader>d``          | Delete buffer, keep the split                                     |
 | ``-``, ``+``           | Resize horizontal splits                                          |
 | ``<ALT><`` ``<ALT>>``  | Resize vertical splits                                            |
-| ``<F9>``               |  Toggle logical (RTL, e.g: Hebrew) editing                        |
-| ``<F8>``               | Toggle visual (RTL, e.g: Hebrew) editing                          |
-| ``g/``                 | :grep!<Space>                                                     |
-| ``g*``                 | :grep! -w current_word                                            |
-| ``ga``                 | :grepadd! (add results to the current search)                     |
-| ``gr``                 | :CtrlPBufTag (fuzzy tag search in current file)                   |
 | ``<TAB>``              | trigger completion, completion confirm, snippet expand and jump   |
+| ``<Leader>ff``         | Find files with Telescope                                         |
+| ``<Leader>fg``         | Live Grep with Telescope                                          |
+| ``<Leader>fw``         | Grep current word with Telescope                                  |
+| ``<Leader>fs``         | Search in current document LSP symbols with Telescope             |
+| ``<Leader>fb``         | Search in current buffers with Telescope                          |
+| ``<Leader>fh``         | Search in VIM help tags with Telescope                            |
+| ``<Leader>tr``         | Toggle logical (RTL, e.g: Hebrew) editing                         |
+| ``<Leader>ti``         | Toggle visual (RTL, e.g: Hebrew) editing (insert chars backward   |
+| ``gd``                 | Goto definition (LSP)                                             |
+| ``gr``                 | Symbol references in quickfix (LSP)                               |
+| ``K``                  | Show documentation/signature hover (LSP)                          |
+| ``<Leader>ca``         | Code actions (LSP)                                                |
+| ``<Leader>rn``         | Rename symbol (LSP)                                               |
+| ``<Leader>f``          | Format buffer (LSP)                                               |
 
-
-Virtualenv settings
--------------------
-
-If you're running from virtualenv activated, make sure to point nvim and ale to
-correct locations. By default, settings are:
-
-    let g:python3_host_prog = '/usr/bin/python'
-    let g:ale_python_flake8_executable = '/usr/bin/flake8'
-
-If needed, override those settings to the locations on your machine.
+For more LSP related mappings, see [lsp.lua](plugin/lsp.lua).
