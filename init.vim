@@ -50,6 +50,7 @@ Plug 'onsails/lspkind-nvim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'b3nj5m1n/kommentary'
 Plug 'simrat39/symbols-outline.nvim'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
@@ -173,4 +174,10 @@ nmap <leader>d :b#<bar>bd#<CR>
 augroup highlight_yank
     autocmd!
     au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
+augroup END
+
+" Less tab size for several types
+augroup two_spaces
+    autocmd!
+    autocmd FileType css,yaml,scss,js,json,html,toml setlocal shiftwidth=2 tabstop=2 softtabstop=2
 augroup END
