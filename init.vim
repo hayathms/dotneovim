@@ -166,7 +166,7 @@ map + <C-W>+
 map <m-,> <C-W>>
 map <m-.> <C-W><
 
-" Deleter buffer, keep the split (switch to prev buf, delete now prev buf)
+" Deleter buffer, keep the split (switch to prev buf, delete if no prev buf)
 nmap <leader>d :b#<bar>bd#<CR>
 
 
