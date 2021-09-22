@@ -116,6 +116,8 @@ Plugins
 * [nvim-lspinstall](https://github.com/kabouzeid/nvim-lspinstall) - Adds the
   missing `:LspInstall` <language> command to conveniently install language
   servers
+* [lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim) - Show
+  function signature when you type
 * [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp/) - A completion
   engine plugin for neovim written in Lua, including various sources for
   completion (LSP, UltiSnips, path, emoji, buffer).
