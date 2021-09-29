@@ -69,7 +69,7 @@ Plugins
 ### Color schemes & Appearance
 
 * [Gruvbox](https://github.com/morhetz/gruvbox)
-* [lualine](https://github.com/hoob3rt/lualine.nvim) - Fast status line
+* [lualine](shadmansaleh/lualine.nvim) - Fast status line
 * [nvim-web-devicon](https://github.com/kyazdani42/nvim-web-devicons) - Icons
   for plugins
 * [lspkind-nvim](https://github.com/onsails/lspkind-nvim) - This tiny plugin

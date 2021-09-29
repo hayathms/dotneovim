@@ -8,16 +8,7 @@ require('lualine').setup {
                 'filename',
                 path = 1
             },
-            require'lsp-status'.status
-        },
-        lualine_x = {
-            {
-                'diagnostics',
-                sources = {'nvim_lsp'}
-            },
-            'encoding',
-            'fileformat',
-            'filetype',
+            "require'lsp-status'.status()"
         },
     }
 }
