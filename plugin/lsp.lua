@@ -1,5 +1,4 @@
 local nvim_lsp = require('lspconfig')
-local lsp_status = require('lsp-status')
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -31,8 +30,6 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
-
-  lsp_status.on_attach(client)
 
   require "lsp_signature".on_attach({
     bind = true, -- This is mandatory, otherwise border config won't get registered.
@@ -103,3 +100,6 @@ lsp_installer.on_server_ready(function(server)
     -- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
     server:setup(opts)
 end)
+
+-- nvim-gps
+require("nvim-gps").setup()

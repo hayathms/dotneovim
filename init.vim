@@ -26,7 +26,7 @@ Plug 'vim-scripts/DrawIt'
 Plug 'gruvbox-community/gruvbox'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'nvim-lua/lsp-status.nvim'
+Plug 'SmiteshP/nvim-gps'
 
 " Version control support
 Plug 'tpope/vim-fugitive'

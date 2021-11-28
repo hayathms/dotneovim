@@ -1,3 +1,5 @@
+local gps = require("nvim-gps")
+
 require('lualine').setup {
     options = {
         section_separators = "",
@@ -8,14 +10,7 @@ require('lualine').setup {
                 'filename',
                 path = 1
             },
-            "require'lsp-status'.status()"
+            { gps.get_location, cond = gps.is_available },
         },
     }
 }
-
-local lsp_status = require('lsp-status')
-
-lsp_status.config({
-    diagnostics = false
-})
-lsp_status.register_progress()
