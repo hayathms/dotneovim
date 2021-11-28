@@ -186,5 +186,5 @@ augroup END
 " Less tab size for several types
 augroup two_spaces
     autocmd!
-    autocmd FileType css,yaml,scss,js,json,html,toml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    autocmd FileType css,yaml,scss,js,json,html,toml,lua setlocal shiftwidth=2 tabstop=2 softtabstop=2
 augroup END
