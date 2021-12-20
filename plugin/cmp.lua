@@ -66,9 +66,9 @@ cmp.setup {
             " " .. vim_item.kind
             -- set a name for each source
             vim_item.menu = ({
-                buffer = "[Buffer]",
+                buffer = "[Buf]",
                 nvim_lsp = "[LSP]",
-                ultisnips = "[UltiSnips]",
+                ultisnips = "[USnip]",
                 nvim_lua = "[Lua]",
                 cmp_tabnine = "[TabNine]",
                 look = "[Look]",
@@ -116,9 +116,14 @@ cmp.setup {
     },
     snippet = {expand = function(args) vim.fn["UltiSnips#Anon"](args.body) end},
     sources = {
-        {name = 'buffer'}, {name = 'nvim_lsp'}, {name = "ultisnips"},
-        {name = "nvim_lua"}, {name = "look"}, {name = "path"},
-        {name = "calc"}, {name = "spell"},
+        {name = 'nvim_lsp'},
+        {name = "ultisnips"},
+        {name = 'buffer'},
+        {name = "nvim_lua"},
+        {name = "look"},
+        {name = "path"},
+        {name = "calc"},
+        {name = "spell"},
         {name = "emoji"}
     },
     completion = {
