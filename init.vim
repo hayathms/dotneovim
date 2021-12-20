@@ -50,6 +50,7 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'onsails/lspkind-nvim'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'ray-x/lsp_signature.nvim'
+Plug 'RRethy/vim-illuminate'
 
 " Programming
 Plug 'editorconfig/editorconfig-vim'

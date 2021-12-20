@@ -37,6 +37,9 @@ local on_attach = function(client, bufnr)
       border = "single"
     }
   }, bufnr)
+
+  -- highlight word under cursor
+  require 'illuminate'.on_attach(client)
 end
 
 -- config that activates keymaps and enables snippet support
@@ -101,5 +104,5 @@ lsp_installer.on_server_ready(function(server)
     server:setup(opts)
 end)
 
--- nvim-gps
 require("nvim-gps").setup()
+require "lsp_signature".setup()
