@@ -51,6 +51,8 @@ Shortcuts and re-Mappings
 | ``<Leader>fs``         | Search in current document LSP symbols with Telescope             |
 | ``<Leader>fb``         | Search in current buffers with Telescope                          |
 | ``<Leader>fh``         | Search in VIM help tags with Telescope                            |
+| ``<Leader>fr``         | Find references (LSP) for symbols under cursor                    |
+| ``<Leader>fS``         | Search in workspace LSP symbols with Telescope                    |
 | ``<Leader>tr``         | Toggle logical (RTL, e.g: Hebrew) editing                         |
 | ``<Leader>ti``         | Toggle visual (RTL, e.g: Hebrew) editing (insert chars backward   |
 | ``gd``                 | Goto definition (LSP)                                             |
