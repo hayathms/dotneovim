@@ -55,7 +55,7 @@ Plug 'RRethy/vim-illuminate'
 " Programming
 Plug 'editorconfig/editorconfig-vim'
 Plug 'b3nj5m1n/kommentary'
-Plug 'simrat39/symbols-outline.nvim'
+" Plug 'simrat39/symbols-outline.nvim'
 Plug 'rust-lang/rust.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'norcalli/nvim-colorizer.lua'
