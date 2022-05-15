@@ -24,6 +24,7 @@ Plug 'vim-scripts/DrawIt'
 
 " Color schemes and appearance
 Plug 'gruvbox-community/gruvbox'
+Plug 'mhartington/oceanic-next'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'SmiteshP/nvim-gps'
@@ -101,6 +102,7 @@ set incsearch            " Do incremental searching
 set ignorecase           " Ignore case when searching
 set infercase            " Smarter completions that will be case aware when ignorecase is on
 set smartcase            " If contains upper case, make case sensitive search
+set iskeyword+=-         " Add - to what vim considers a keyword for movement, e.g: e
 
 " No modlines for security
 set modelines=0
@@ -176,7 +178,7 @@ nmap <leader>d :b#<bar>bd#<CR>
 
 
 " Clean all end of line whitespace with <Leader>S
-:nnoremap <silent><leader>S :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+nnoremap <silent><leader>S :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Highlight yanked region
 augroup highlight_yank
