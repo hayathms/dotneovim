@@ -28,6 +28,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'SmiteshP/nvim-gps'
+Plug 'shaunsingh/nord.nvim'
 
 " Version control support
 Plug 'tpope/vim-fugitive'
