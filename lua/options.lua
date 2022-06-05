@@ -22,6 +22,8 @@ vim.opt.matchpairs:append("<:>")    -- Show matching <> (html mainly) as well
 vim.opt.showmatch = true            -- Show matching braces, somewhat annoying...
 vim.opt.matchtime = 3               -- Tenths of a second to show the matching paren
 vim.opt.modelines = 0               -- No modlines for security
+vim.opt.splitright = true           -- Open vertical split to the right
+vim.opt.splitbelow = true           -- Open horizontal split below
 
 -- Tab to spaces settings
 vim.opt.tabstop = 4                 -- Number of spaces of tab character
