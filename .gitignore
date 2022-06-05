@@ -5,4 +5,5 @@ after.vim
 spell/*
 bundle/
 plugged/
+plugin/
 autoload/plug.vim*
