@@ -191,3 +191,5 @@ augroup two_spaces
     autocmd!
     autocmd FileType css,yaml,scss,js,json,html,toml,lua setlocal shiftwidth=2 tabstop=2 softtabstop=2
 augroup END
+
+let g:indentLine_char = '┊'
