@@ -68,3 +68,7 @@ map('n', '<leader>fS', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', opts)
 -- nvim tree
 map('n', '<leader>tt', ':NvimTreeToggle<CR>', opts)
 map('n', '<leader>tf', ':NvimTreeFindFile<CR>', opts)
+
+-- Right to left mappings
+map('n', '<leader>tr', ':set invrl<cr>', opts)      -- Toggle right-to-left
+map('n', '<leader>ti', ':set invrevins<cr>', opts)  -- Toggle inserting chars backwards
