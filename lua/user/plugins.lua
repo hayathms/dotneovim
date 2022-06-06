@@ -54,6 +54,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"
   use "lukas-reineke/indent-blankline.nvim"
   use "vim-scripts/gnupg.vim"
+  use "tpope/vim-unimpaired"
 
   -- UI plugins
   use "nvim-telescope/telescope.nvim"
