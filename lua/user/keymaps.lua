@@ -54,3 +54,13 @@ map('n', '<leader>V', ':source ~/.config/nvim/init.lua<CR>', opts)
 
 -- Clean all end of line whitespace with <Leader>S
 map('n', '<leader>S', [[:let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>]], opts)
+
+-- Telescope mapping
+map('n', '<leader>ff', '<cmd>Telescope find_files<cr>', opts)
+map('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', opts)
+map('n', '<leader>fw', '<cmd>Telescope grep_string<cr>', opts)
+map('n', '<leader>fs', '<cmd>Telescope lsp_document_symbols<cr>', opts)
+map('n', '<leader>fb', '<cmd>Telescope buffers<cr>', opts)
+map('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', opts)
+map('n', '<leader>fr', '<cmd>Telescope lsp_references<cr>', opts)
+map('n', '<leader>fS', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', opts)
