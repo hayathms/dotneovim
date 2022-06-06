@@ -42,3 +42,8 @@ vim.opt.iskeyword:append("-")       -- Add - to what vim considers a keyword for
 -- Highlight end of line whitespace.
 vim.api.nvim_set_hl(0, "WhitespaceEOL", { reverse = true })
 vim.fn.matchadd("WhitespaceEOL", "\\s\\+$")
+
+-- Highlight yanked region
+vim.api.nvim_create_autocmd('TextYankPost', {
+  callback = function() vim.highlight.on_yank{higroup="IncSearch", timeout=700} end
+})
