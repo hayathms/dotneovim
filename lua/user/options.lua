@@ -47,3 +47,13 @@ vim.fn.matchadd("WhitespaceEOL", "\\s\\+$")
 vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function() vim.highlight.on_yank{higroup="IncSearch", timeout=700} end
 })
+
+-- Less tab size for several types
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = {"css", "yaml", "scss", "js", "json", "html", "toml", "lua"},
+  callback = function()
+    vim.bo.tabstop = 2
+    vim.bo.softtabstop = 2
+    vim.bo.shiftwidth = 2
+  end
+})
