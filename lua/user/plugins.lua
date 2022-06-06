@@ -94,6 +94,12 @@ return packer.startup(function(use)
      run = ":TSUpdate",
   })
 
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
   -- Programming
   use "editorconfig/editorconfig-vim"
 
