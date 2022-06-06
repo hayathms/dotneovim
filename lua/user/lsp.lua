@@ -55,39 +55,7 @@ local function make_config()
 end
 
 
--- Configure lua language server for neovim development
-local lua_settings = {
-  Lua = {
-    runtime = {
-      -- LuaJIT in the case of Neovim
-      version = 'LuaJIT',
-      path = vim.split(package.path, ';'),
-    },
-    diagnostics = {
-      -- Get the language server to recognize the `vim` global
-      globals = {'vim'},
-    },
-    workspace = {
-      -- Make the server aware of Neovim runtime files
-      library = {
-        [vim.fn.expand('$VIMRUNTIME/lua')] = true,
-        [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
-      },
-    },
-  }
-}
-
--- Rust settings configuration
-local rust_settings = {
-  ["rust-analyzer"] = {
-    checkOnSave = {
-      command = "clippy"
-    }
-  }
-}
-
 -- lsp-install
-
 local lsp_installer = require("nvim-lsp-installer")
 
 -- Register a handler that will be called for all installed servers.
@@ -95,9 +63,11 @@ local lsp_installer = require("nvim-lsp-installer")
 lsp_installer.on_server_ready(function(server)
     local opts = make_config()
 
-    --[[ if server.name == "rust_analyzer" then
-        opts.root_dir = function() ... end
-    end ]]
+    -- load custom lsp server settings
+	local has_custom_opts, server_custom_opts = pcall(require, "user.lsp_settings." .. server.name)
+	if has_custom_opts then
+	 	opts = vim.tbl_deep_extend("force", server_custom_opts, opts)
+	end
 
     -- This setup() function is exactly the same as lspconfig's setup function.
     -- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
