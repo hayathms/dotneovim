@@ -93,15 +93,18 @@ return packer.startup(function(use)
      "nvim-treesitter/nvim-treesitter",
      run = ":TSUpdate",
   })
-  use {
-    'numToStr/Comment.nvim',
-    config = function()
-      require('Comment').setup()
-    end
-  }
+
   -- Programming
   use "editorconfig/editorconfig-vim"
   use 'echasnovski/mini.nvim'
+  use {
+    "numToStr/Comment.nvim",
+    config = function() require("Comment").setup() end
+  }
+  use {
+    "norcalli/nvim-colorizer.lua",
+    config = function() require("colorizer").setup() end
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
