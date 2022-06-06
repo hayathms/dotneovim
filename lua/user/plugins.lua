@@ -93,7 +93,6 @@ return packer.startup(function(use)
      "nvim-treesitter/nvim-treesitter",
      run = ":TSUpdate",
   })
-
   use {
     'numToStr/Comment.nvim',
     config = function()
@@ -102,6 +101,7 @@ return packer.startup(function(use)
   }
   -- Programming
   use "editorconfig/editorconfig-vim"
+  use 'echasnovski/mini.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
