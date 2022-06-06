@@ -39,6 +39,8 @@ vim.opt.infercase = true            -- Smarter completions that will be case awa
 vim.opt.smartcase = true            -- If contains upper case, make case sensitive search
 vim.opt.iskeyword:append("-")       -- Add - to what vim considers a keyword for movement, e.g: e
 
+vim.api.nvim_set_var("indent_blankline_char", "┊")
+
 -- Highlight end of line whitespace.
 vim.api.nvim_set_hl(0, "WhitespaceEOL", { reverse = true })
 vim.fn.matchadd("WhitespaceEOL", "\\s\\+$")

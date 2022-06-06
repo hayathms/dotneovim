@@ -52,6 +52,7 @@ return packer.startup(function(use)
 
   -- Helper plugins
   use "windwp/nvim-autopairs"
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- UI plugins
   use "nvim-telescope/telescope.nvim"
@@ -92,6 +93,9 @@ return packer.startup(function(use)
      "nvim-treesitter/nvim-treesitter",
      run = ":TSUpdate",
   })
+
+  -- Programming
+  use "editorconfig/editorconfig-vim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
