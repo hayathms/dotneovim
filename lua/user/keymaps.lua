@@ -64,3 +64,7 @@ map('n', '<leader>fb', '<cmd>Telescope buffers<cr>', opts)
 map('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', opts)
 map('n', '<leader>fr', '<cmd>Telescope lsp_references<cr>', opts)
 map('n', '<leader>fS', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', opts)
+
+-- nvim tree
+map('n', '<leader>tt', ':NvimTreeToggle<CR>', opts)
+map('n', '<leader>tf', ':NvimTreeFindFile<CR>', opts)
