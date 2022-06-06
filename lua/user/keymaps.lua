@@ -5,6 +5,7 @@
 local map = vim.api.nvim_set_keymap             -- shortcut to the map func
 local opts = { noremap = true, silent = true }  -- DRY for map options
 local expr = { noremap = true, silent = true, expr = true }  -- Opts and expr
+local noremap = { noremap = true }
 
 -- map the leader key to space
 map('n', '<Space>', '', {})
@@ -72,3 +73,10 @@ map('n', '<leader>tf', ':NvimTreeFindFile<CR>', opts)
 -- Right to left mappings
 map('n', '<leader>tr', ':set invrl<cr>', opts)      -- Toggle right-to-left
 map('n', '<leader>ti', ':set invrevins<cr>', opts)  -- Toggle inserting chars backwards
+
+
+-- Custom grep behavior (in addition to telescope, as the allow searching with
+-- all of rg options)
+map('n', 'g/', ':grep!<space>', noremap)
+map('n', 'g*', ':grep! -w <C-R><C-W><space>', noremap)
+map('n', 'ga', ':grepadd!<space>', noremap)

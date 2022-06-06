@@ -59,3 +59,16 @@ vim.api.nvim_create_autocmd('FileType', {
     vim.bo.shiftwidth = 2
   end
 })
+
+-- Use ripgrep if exists
+if vim.fn.executable("rg") then
+  vim.o.grepprg = [[rg --vimgrep --no-heading]]
+  vim.o.grepformat = [[%f:%l:%c:%m,%f:%l:%m]]
+end
+
+
+-- Auto open grep quickfix window
+vim.api.nvim_create_autocmd("QuickFixCmdPost", {
+  pattern = "*grep*",
+  command = "cwindow"
+})
