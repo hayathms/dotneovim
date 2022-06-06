@@ -80,3 +80,6 @@ map('n', '<leader>ti', ':set invrevins<cr>', opts)  -- Toggle inserting chars ba
 map('n', 'g/', ':grep!<space>', noremap)
 map('n', 'g*', ':grep! -w <C-R><C-W><space>', noremap)
 map('n', 'ga', ':grepadd!<space>', noremap)
+
+-- Symbols outline
+map('n', '<leader>ts', '<cmd>SymbolsOutline<cr>', opts)
