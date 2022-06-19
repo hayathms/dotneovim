@@ -1,4 +1,7 @@
 require'telescope'.setup {
+  defaults = {
+    layout_strategy = "vertical"
+  },
   extensions = {
     media_files = {
       -- filetypes whitelist
